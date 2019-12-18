@@ -1,5 +1,7 @@
+import { sub } from "./other";
+
 export function add(a: i32, b: i32): i32 {
-  return a + b;
+  return sub(a, -b);
 }
 
-export { sub } from "./other";
+export { sub }; // error
